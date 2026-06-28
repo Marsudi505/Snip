@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>INDC Admin</title>
+
+  <link rel="stylesheet" href="../css/admin.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+
+    <div class="logo">
+      INDC ADMIN
+    </div>
+
+    <button id="logoutBtn">
+      LOGOUT
+    </button>
+
+  </nav>
+
+  <main>
+
+    <section class="form-card">
+
+      <h2>📁 Folder</h2>
+
+      <div class="folder-add">
+
+        <input
+          type="text"
+          id="folderName"
+          placeholder="WhatsApp Bot"
+        >
+
+        <button id="addFolderBtn">
+          +
+        </button>
+
+      </div>
+
+      <div
+        id="folderList"
+        class="folder-list"
+      ></div>
+
+    </section>
+
+    <section class="form-card">
+
+      <h2>✨ Tambah Snippet</h2>
+
+      <input
+        type="text"
+        id="title"
+        placeholder="Judul snippet"
+      >
+
+      <select id="folder">
+
+        <option value="">
+          Pilih Folder
+        </option>
+
+      </select>
+
+      <input
+        type="text"
+        id="filename"
+        placeholder="welcome.js"
+      >
+
+      <textarea
+        id="description"
+        placeholder="Deskripsi snippet"
+      ></textarea>
+
+      <textarea
+        id="code"
+        placeholder="Paste code di sini..."
+      ></textarea>
+
+      <button id="saveBtn">
+        SIMPAN SNIPPET
+      </button>
+
+    </section>
+
+    <section class="snippet-table">
+
+      <h2>📚 Daftar Snippet</h2>
+
+      <div id="snippetList"></div>
+
+    </section>
+
+  </main>
+
+  <script src="../js/admin.js"></script>
+
+</body>
+</html>
